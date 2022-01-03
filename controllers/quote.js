@@ -1,7 +1,7 @@
 const { response } = require("express");
 const frases = require("../quotes.json");
 
-const quoteGet = (req, res = "response") => {
+const quoteGet = (req, res = response) => {
   const randomQuote =
     frases[Math.floor(Math.random() * frases.length)];
 
