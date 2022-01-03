@@ -5,7 +5,7 @@ class Server {
   constructor() {
     this.app = express();
     this.port = process.env.PORT;
-    this.frasesPath = "/frases";
+    this.frasesPath = "/";
 
     // Middleware
     this.middlewares();
@@ -16,8 +16,6 @@ class Server {
   middlewares() {
     // CORS
     this.app.use(cors());
-
-    this.app.use(express.static("public"));
   }
 
   routes() {

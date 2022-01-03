@@ -7,8 +7,8 @@ const {
 const router = Router();
 
 // All quotes
-router.get("/", allQuotesGet);
+router.get("/all", allQuotesGet);
 
-router.get("/random", quoteGet);
+router.get("/", quoteGet);
 
 module.exports = router;
